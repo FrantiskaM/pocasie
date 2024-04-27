@@ -15,11 +15,12 @@
   <body>
     <div class="app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -28,7 +29,7 @@
       <main>
         <div class="wheater-data">
           <div>
-            <h1 class="city">Prague</h1>
+            <h1 class="city" id="city">Prague</h1>
             <p class="app-details">
               Sunday 11:47, sunny
               <br />
@@ -55,5 +56,6 @@
         <a href="https://pocasie-app.netlify.app/" target="_blank">Netlify</a>
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
