@@ -14,12 +14,12 @@
     <title>Wheater app</title>
   </head>
   <body>
-    <div class="app">
+    <div class="weather-app">
       <header>
         <form class="search-form" id="search-form">
           <input
             type="search"
-            placeholder="Enter a city..."
+            placeholder="Enter a city.."
             required
             id="search-form-input"
             class="search-form-input"
@@ -28,24 +28,24 @@
         </form>
       </header>
       <main>
-        <div class="wheater-data">
+        <div class="weather-app-data">
           <div>
-            <h1 class="city" id="city"></h1>
-            <p class="app-details">
-              <span id="time"></span>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,
               <span id="description"></span>
               <br />
               Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="speed"></strong>
+              <strong id="wind-speed"></strong>
             </p>
           </div>
-          <div class="temperature">
+          <div class="weather-app-temperature-container">
             <div id="icon"></div>
-            <div class="temperature-value" id="temperature"></div>
-            <div class="temperature-unit">°C</div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
-        <div class="wheater-forecast" id="forecast"></div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
 
       <footer>
